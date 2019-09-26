@@ -78,6 +78,13 @@ table {
 	font-weight: regular;
 }
 
+@font-face {
+	font-family: "Lucida Sans";	
+	src: url(assets/fonts/lucida/Lucida-Sans-Italic.ttf) format("ttf");
+	font-weight: regular;
+	font-style: italic;
+}
+
 
 .visually-hidden {
     position: absolute;
@@ -87,6 +94,121 @@ table {
     margin: -1px;    
 }
 
+.header__top {
+	display: flex;
+}
+
+.logo {
+	background-color: #4c4c4c;
+	display: flex;
+	align-items: center;
+	cursor: pointer;	
+} 
+
+.logo--header {
+	padding: 12px 19px 13px 13px;
+	background-image: url('assets/images/logo-gradient.png');
+}
+  
+
+.logo__image {
+	height: 39px;
+	width: 39px;
+	position: relative;	
+	margin-right: 8px;
+}
+
+.logo-icon {
+	fill: #f5c506;
+	height: 100%;
+	width:100%;
+}
+
+.logo-icon--shadow {
+	opacity: 0.5;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.logo__text {
+	font-family: "Lucida Sans";
+	font-size: 19px;
+	text-transform: uppercase;
+	font-style: italic;
+	color: white;		
+	text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.42);
+}
+
+.main-menu {
+	display: flex;
+	flex-grow: 1;
+
+}
+
+.main-menu__item {
+	flex-grow: 1;	
+}
+
+.main-menu__item:not(last-shild) {
+	border-right: 1px solid #dbb005;
+}
+
+.main-menu__link {
+	font-family: "SegoeWP";
+	font-size: 19px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #9B7D3D;
+	background-color: #f4c406;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;	
+}
+
+.main-menu__link:hover  {
+	color: #f4c406;
+	background-color: #9B7D3D;
+}
+
+.main-menu__link:active  {
+	color: black;
+	background-color: white;
+}
+
+.main-menu__link:hover .main-menu__icon {
+	fill: #f4c406;
+}
+
+.main-menu__link:active .main-menu__icon {
+	fill: black;
+}
+
+
+.main-menu__icon {
+	fill: #b99403;
+	margin-right: 10px;
+}  
+
+.main-menu__icon--about-us {
+	height: 22px;
+	width: 24px;
+}
+
+.main-menu__icon--services {
+	height: 22px;
+	width: 22px;
+}
+
+.main-menu__icon--contact {
+	height: 21px;
+	width: 28px;
+} 
+
 .edges-list {
 	font-family: "PT Sans";
 }
+
+
+
