@@ -1,16 +1,84 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -19,67 +87,79 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
 	display: block;
 }
+
 body {
 	line-height: 1;
 }
-ol, ul {
+
+ol,
+ul {
 	list-style: none;
 }
-blockquote, q {
+
+blockquote,
+q {
 	quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
-} 
+}
 
 @font-face {
 	font-family: "Open Sans";
 	src: url(assets/fonts/open-sans/open-sans-regular.woff2) format("woff2"), url(assets/fonts/pt-sans/open-sans-regular.woff) format("woff");
-	font-weight: regular; 
-}
-  
-@font-face {
-	font-family: "PT Sans";
-	src: url(assets/fonts/pt-sans/pt-sans-regular.woff2) format("woff2"), url(assets/fonts/pt-sans/pt-sans-regular.woff) format("woff");
-	font-weight: regular; 
+	font-weight: regular;
 }
 
 @font-face {
-	font-family: "PT Sans Narrow";	
+	font-family: "PT Sans";
+	src: url(assets/fonts/pt-sans/pt-sans-regular.woff2) format("woff2"), url(assets/fonts/pt-sans/pt-sans-regular.woff) format("woff");
+	font-weight: regular;
+}
+
+@font-face {
+	font-family: "PT Sans Narrow";
 	src: url(assets/fonts/pt-sans-narrow/pt-sans-narrow-700.woff2) format("woff2"), url(assets/fonts/pt-sans-narrow/pt-sans-narrow-700.woff) format("woff");
 	font-weight: bold;
 }
 
 @font-face {
-	font-family: "SegoeWP";	
+	font-family: "SegoeWP";
 	src: url(assets/fonts/segoe-wp/SegoeWP.woff) format("woff");
 	font-weight: regular;
 }
 
 @font-face {
-	font-family: "SegoeWP Light";	
-	src: url(assets/fonts/segoe-wp-light/segoe-wp-light.ttf) format("ttf");
-	font-weight: regular;
-}
-
-@font-face {
-	font-family: "Asap";	
+	font-family: "Asap";
 	src: url(assets/fonts/asap/asap-regular.woff2) format("woff2"), url(assets/fonts/asap/asap-regular.woff) format("woff");
 	font-weight: regular;
 }
 
 @font-face {
-	font-family: "Lucida Sans";	
+	font-family: "Lucida Sans";
 	src: url(assets/fonts/lucida/Lucida-Sans-Italic.ttf) format("ttf");
 	font-weight: regular;
 	font-style: italic;
@@ -87,11 +167,11 @@ table {
 
 
 .visually-hidden {
-    position: absolute;
-    clip: rect(0 0 0 0);
-    width: 1px;
-    height: 1px;
-    margin: -1px;    
+	position: absolute;
+	clip: rect(0 0 0 0);
+	width: 1px;
+	height: 1px;
+	margin: -1px;
 }
 
 .header__top {
@@ -102,26 +182,26 @@ table {
 	background-color: #4c4c4c;
 	display: flex;
 	align-items: center;
-	cursor: pointer;	
-} 
+	cursor: pointer;
+}
 
 .logo--header {
 	padding: 12px 19px 13px 13px;
 	background-image: url('assets/images/logo-gradient.png');
 }
-  
+
 
 .logo__image {
 	height: 39px;
 	width: 39px;
-	position: relative;	
+	position: relative;
 	margin-right: 8px;
 }
 
 .logo-icon {
 	fill: #f5c506;
 	height: 100%;
-	width:100%;
+	width: 100%;
 }
 
 .logo-icon--shadow {
@@ -136,7 +216,7 @@ table {
 	font-size: 19px;
 	text-transform: uppercase;
 	font-style: italic;
-	color: white;		
+	color: white;
 	text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.42);
 }
 
@@ -147,7 +227,7 @@ table {
 }
 
 .main-menu__item {
-	flex-grow: 1;	
+	flex-grow: 1;
 }
 
 .main-menu__item:not(last-shild) {
@@ -164,15 +244,15 @@ table {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	height: 100%;	
+	height: 100%;
 }
 
-.main-menu__link:hover  {
+.main-menu__link:hover {
 	color: #f4c406;
 	background-color: #9B7D3D;
 }
 
-.main-menu__link:active  {
+.main-menu__link:active {
 	color: black;
 	background-color: white;
 }
@@ -189,7 +269,7 @@ table {
 .main-menu__icon {
 	fill: #b99403;
 	margin-right: 10px;
-}  
+}
 
 .main-menu__icon--about-us {
 	height: 22px;
@@ -204,11 +284,60 @@ table {
 .main-menu__icon--contact {
 	height: 21px;
 	width: 28px;
-} 
+}
+
+.slide__video {
+	width: 100%;
+	height: auto;
+	vertical-align: bottom;
+}
+
+.slide-description {
+	display: none;
+}
+
+.slider__navigation {
+	display: none;
+}
+
+.advantages-list {
+	background-color: #f7f7f7;
+	background-image: url('/assets/images/advantages_back.png');
+	padding-left: 18px;
+	padding-top: 25px;
+	display: flex;
+}
+
+.advantages-list__item {}
+
+.advantages__icon {
+	fill: #f5c506;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.advantages__icon--design {
+	height: 60px;
+	width: 90px;
+}
+
+.advantages__icon--custom {
+	height: 70px;
+	width: 67px;
+}
+
+.advantages__icon--free {
+	height: 70px;
+	width: 70px;
+}
+
+.advantages-list__text {
+	font-family: "SegoeWP";
+	font-size: 23px;
+	text-transform: uppercase;
+}
 
 .edges-list {
 	font-family: "PT Sans";
 }
-
-
-

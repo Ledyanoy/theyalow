@@ -59,23 +59,35 @@
             </header>
             <main class="main">
                 <div class="slider">
-                    <video src=""></video>
-                    <div class="slider-description">
-                        <p>the cool</p>
-                        <p>the minimal</p>
+                    <div class="slide slider__item">
+                        <video src="" class="slide__video" controls poster="/assets/images/video-preload.png"></video>
+                        <div class="slide-description">
+                            <p>the cool</p>
+                            <p>the minimal</p>
+                        </div>
+                    </div>
+                    <div class="slider__navigation">
+                        <a class="slider__button slider__button--prev">previous</a>
+                        <a class="slider__button slider__button--next">next</a>
                     </div>
                 </div>
                 <ul class="advantages-list">
-                    <li>
-                        <div class="advantages-list__pic"></div>
+                    <li class="advantages-list__item">
+                        <svg class="advantages__icon advantages__icon--design">
+                            <use xlink:href="#better_design"></use>
+                        </svg>
                         <p class="advantages-list__text">better design</p>
                     </li>
-                    <li>
-                        <div class="advantages-list__pic"></div>
-                        <p class="advantages-list__text">customize</p>
+                    <li class="advantages-list__item">
+                        <svg class="advantages__icon advantages__icon--custom">
+                            <use xlink:href="#custom"></use>
+                        </svg>
+                        <p class="advantages-list__text">customise</p>
                     </li>
-                    <li>
-                        <div class="advantages-list__pic"></div>
+                    <li class="advantages-list__item">
+                        <svg class="advantages__icon advantages__icon--free">
+                            <use xlink:href="#free"></use>
+                        </svg>
                         <p class="advantages-list__text">its free</p>
                     </li>
                 </ul>
@@ -83,23 +95,24 @@
                     <h2>lorem ipsum dolor sit amet</h2>
                     <ul lass="interactive-cards">
                         <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-                            ut</li>
+                            ut
+                        </li>
                         <li>
                             <video src=""></video>
                         </li>
-                        <<li>
+                        <li>
                             <div></div>
                             <ul>
                                 <li>Daily Mobile UI Design Inspiration #1 via @cssauthor</li>
                                 <li>Daily Mobile UI Design Inspiration #1 via @cssauthor</li>
                                 <li>Daily Mobile UI Design Inspiration #1 via @cssauthor
-                        </<li>
-                    </ul>
-                    <form>
-                        <input type="text">
-                        <button>Tweet</button>
-                    </form>
-                    </li>
+                                    </<li>
+                            </ul>
+                            <form>
+                                <input type="text">
+                                <button>Tweet</button>
+                            </form>
+                        </li>
                     </ul>
                     <input type="range">
                 </div>
@@ -139,22 +152,45 @@
             </symbol>
 
             <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 78.625 78.625" id="logo-shadow">
-                <path d="M-.014 20.381l18.78-.713L18.641.874l8.019 7.668.126 18.795-18.781.712zm12.17 11.638l18.78-.713-.124-18.794 8.019 7.668.126 18.795-18.781.712zm47.827 45.737l-.126-18.794 18.781-.714-8.019-7.668-18.782.713.127 18.794zM47.812 66.118l-.125-18.794 18.781-.714-8.019-7.669-18.782.713.127 18.794zM58.245-.011l.713 18.78 18.794-.126-7.668 8.019-18.795.126-.712-18.781zm-11.633 12.17l.713 18.781 18.787-.126-7.668 8.019-18.795.126-.713-18.781zM.871 59.986l18.793-.126.714 18.781 7.668-8.019-.713-18.782-18.794.127zm11.641-12.17l18.79-.122.71 18.777 7.669-8.019-.714-18.782-18.794.127z"
-                 fill-rule="evenodd"></path>
+                <path
+                    d="M-.014 20.381l18.78-.713L18.641.874l8.019 7.668.126 18.795-18.781.712zm12.17 11.638l18.78-.713-.124-18.794 8.019 7.668.126 18.795-18.781.712zm47.827 45.737l-.126-18.794 18.781-.714-8.019-7.668-18.782.713.127 18.794zM47.812 66.118l-.125-18.794 18.781-.714-8.019-7.669-18.782.713.127 18.794zM58.245-.011l.713 18.78 18.794-.126-7.668 8.019-18.795.126-.712-18.781zm-11.633 12.17l.713 18.781 18.787-.126-7.668 8.019-18.795.126-.713-18.781zM.871 59.986l18.793-.126.714 18.781 7.668-8.019-.713-18.782-18.794.127zm11.641-12.17l18.79-.122.71 18.777 7.669-8.019-.714-18.782-18.794.127z"
+                    fill-rule="evenodd"></path>
             </symbol>
 
             <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 22" id="about-us">
-                <path d="M0 22l4.052-6H20.01L24 22H0zm12.031-7c-3.305 0-5.984-3.686-5.984-7V6a5.985 5.985 0 1 1 11.969 0v2c0 3.314-2.68 7-5.985 7z" fill-rule="evenodd"></path>
+                <path
+                    d="M0 22l4.052-6H20.01L24 22H0zm12.031-7c-3.305 0-5.984-3.686-5.984-7V6a5.985 5.985 0 1 1 11.969 0v2c0 3.314-2.68 7-5.985 7z"
+                    fill-rule="evenodd"></path>
             </symbol>
 
             <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.031 22" id="services">
-                <path d="M16.193 1.828a2.83 2.83 0 1 0 4.007 4l1.62-1.618a5.572 5.572 0 0 1 .211 1.444 5.594 5.594 0 0 1-7.133 5.439c-.015.017-.02.039-.036.055l-10.017 10a2.83 2.83 0 0 1-4.006-4l10.016-10c.017-.017.041-.022.058-.038a5.571 5.571 0 0 1-.214-1.458A5.6 5.6 0 0 1 17.814.207zM2.908 18.378a.707.707 0 1 0 .708.707.707.707 0 0 0-.708-.708z"
-                 fill-rule="evenodd"></path>
+                <path
+                    d="M16.193 1.828a2.83 2.83 0 1 0 4.007 4l1.62-1.618a5.572 5.572 0 0 1 .211 1.444 5.594 5.594 0 0 1-7.133 5.439c-.015.017-.02.039-.036.055l-10.017 10a2.83 2.83 0 0 1-4.006-4l10.016-10c.017-.017.041-.022.058-.038a5.571 5.571 0 0 1-.214-1.458A5.6 5.6 0 0 1 17.814.207zM2.908 18.378a.707.707 0 1 0 .708.707.707.707 0 0 0-.708-.708z"
+                    fill-rule="evenodd"></path>
             </symbol>
 
             <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 21" id="contact">
-                <path d="M27.692 20.183l-9.655-9.656 7.145-7.146L27.715.849a1.7 1.7 0 0 1 .285.9v17.5a1.7 1.7 0 0 1-.308.934zm-3.128-17.42L21.3 6.022l-6.238 6.237-1.094 1.095L3.436 2.817l-1.75-1.75-.8-.8A1.7 1.7 0 0 1 1.75 0h24.5a1.705 1.705 0 0 1 .835.241l-.881.881zm-23.5-1.076l8.814 8.814L.26 20.119A1.7 1.7 0 0 1 0 19.25V1.75A1.7 1.7 0 0 1 .263.882l.8.8zm9.433 9.433l.369.369.134.131 1.2 1.2 1.75 1.75.073-.073.019.018 1.64-1.641 1.732-1.732 9.634 9.635a1.7 1.7 0 0 1-.8.219h-24.5a1.7 1.7 0 0 1-.868-.263z"
-                fill-rule="evenodd"></path>
+                <path
+                    d="M27.692 20.183l-9.655-9.656 7.145-7.146L27.715.849a1.7 1.7 0 0 1 .285.9v17.5a1.7 1.7 0 0 1-.308.934zm-3.128-17.42L21.3 6.022l-6.238 6.237-1.094 1.095L3.436 2.817l-1.75-1.75-.8-.8A1.7 1.7 0 0 1 1.75 0h24.5a1.705 1.705 0 0 1 .835.241l-.881.881zm-23.5-1.076l8.814 8.814L.26 20.119A1.7 1.7 0 0 1 0 19.25V1.75A1.7 1.7 0 0 1 .263.882l.8.8zm9.433 9.433l.369.369.134.131 1.2 1.2 1.75 1.75.073-.073.019.018 1.64-1.641 1.732-1.732 9.634 9.635a1.7 1.7 0 0 1-.8.219h-24.5a1.7 1.7 0 0 1-.868-.263z"
+                    fill-rule="evenodd"></path>
+            </symbol>
+
+            <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 89 61" id="better_design">
+                <path
+                    d="M66.75 61H19.469a19.35 19.35 0 0 1-5.492-37.939c-.015-.3-.07-.578-.07-.879a13.747 13.747 0 0 1 18.28-13.1 22.181 22.181 0 0 1 39.526 8.149A22.153 22.153 0 0 1 66.75 61zM50.062 38.818V22.182H38.937v16.636H30.42L44.5 52.855l14.08-14.037h-8.518z"
+                    fill-rule="evenodd"></path>
+            </symbol>
+
+            <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 67 69" id="custom">
+                <path
+                    d="M54.98 40.361c-3.448 21.867-26.4 23.382-39.239 22.473-.849 3.76-1.179 6.166-1.179 6.166H8.251s8.132-30.483 27.076-46.68a45.98 45.98 0 0 1 11.84-7.778c-20.436 7.407-34.694 32.535-41.042 45.9a35.318 35.318 0 0 1-1.78-36.7C14.141 5.126 67 0 67 0s-7.853 13.933-12.02 40.361z"
+                    fill-rule="evenodd"></path>
+            </symbol>
+
+            <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68 69" id="free">
+                <path
+                    d="M49.725 42.236v20.073l-8.847-11.368L22.525 69 0 0l68 24.254zM6.375 6.551L45.05 46.836l4.533-4.46z"
+                    fill-rule="evenodd"></path>
             </symbol>
         </svg>
 
