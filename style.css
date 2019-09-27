@@ -186,7 +186,7 @@ table {
 }
 
 .logo--header {
-	padding: 12px 19px 13px 13px;
+	padding: 13px 25px 10px 12px;
 	background-image: url('assets/images/logo-gradient.png');
 }
 
@@ -195,7 +195,7 @@ table {
 	height: 39px;
 	width: 39px;
 	position: relative;
-	margin-right: 8px;
+	margin-right: 6px;
 }
 
 .logo-icon {
@@ -223,15 +223,14 @@ table {
 .main-menu {
 	display: flex;
 	flex-grow: 1;
-
 }
 
 .main-menu__item {
-	flex-grow: 1;
+	
 }
 
-.main-menu__item:not(last-shild) {
-	border-right: 1px solid #dbb005;
+.main-menu__item:not(:last-child) {
+	border-right: 1px solid #b99403;
 }
 
 .main-menu__link {
@@ -263,6 +262,21 @@ table {
 
 .main-menu__link:active .main-menu__icon {
 	fill: black;
+}
+
+.main-menu__link--about {
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+.main-menu__link--services {
+	padding-left: 8px;
+	padding-right: 10px;
+}
+
+.main-menu__link--contact {
+	padding-left: 13px;
+	padding-right: 14px;
 }
 
 
@@ -300,12 +314,19 @@ table {
 	display: none;
 }
 
-.advantages-list {
+.advantages{
 	background-color: #f7f7f7;
-	background-image: url('/assets/images/advantages_back.png');
-	padding-left: 18px;
+	background-image: url('assets/images/advantages_back.png');
+}
+
+.advantages-list {		
 	padding-top: 25px;
+	padding-bottom: 34px;
 	display: flex;
+	max-width: 560px;
+	width:100%;
+	margin-left: 15px;
+	justify-content: space-between;
 }
 
 .advantages-list__item {}
@@ -313,23 +334,31 @@ table {
 .advantages__icon {
 	fill: #f5c506;
 	display: block;
-	margin-left: auto;
-	margin-right: auto;
+	
 }
 
 .advantages__icon--design {
 	height: 60px;
 	width: 90px;
+	margin-top: 10px;
+	margin-left: 30px;
+	margin-bottom: 20px;
 }
 
 .advantages__icon--custom {
 	height: 70px;
 	width: 67px;
+	margin-left: 25px;
+	margin-top: 2px;
+	margin-bottom: 18px;
 }
 
 .advantages__icon--free {
 	height: 70px;
 	width: 70px;
+	margin-left: 3px;
+    margin-top: 2px;
+    margin-bottom: 18px;
 }
 
 .advantages-list__text {
@@ -338,6 +367,20 @@ table {
 	text-transform: uppercase;
 }
 
+.description {
+	padding: 10px 9px;
+}
+
+.description__header {
+	display: none;
+}
+
 .edges-list {
 	font-family: "PT Sans";
+}
+
+@media (min-width: 642px) {
+	.main-menu__item {
+		flex-grow: 1;
+	}	
 }
