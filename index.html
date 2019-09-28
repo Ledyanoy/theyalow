@@ -54,10 +54,7 @@
                             </a>
                         </li>
                     </ul>
-
                 </div>
-            </header>
-            <main class="main">
                 <div class="slider">
                     <div class="slide slider__item">
                         <video src="" class="slide__video" controls poster="assets/images/video-preload.png"></video>
@@ -71,6 +68,9 @@
                         <a class="slider__button slider__button--next">next</a>
                     </div>
                 </div>
+            </header>
+            <main class="main">
+                
                 <div class="advantages">
                     <ul class="advantages-list">
                         <li class="advantages-list__item">
@@ -95,36 +95,45 @@
                 </div>
                 <div class="description">
                     <h2 class="description__header">lorem ipsum dolor sit amet</h2>
-                    <ul lass="interactive-cards">
-                        <li class="interactive-cards__item card">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                    <ul class="interactive-cards">
+                        <li class="interactive-cards__item card card--text">Lorem ipsum dolor sit amet, consecte&shy;tur adipisicing elit, sed do eiusmod tempor incididunt
                             ut
+                            <a href="" class="card__btn add-btn"></a>
                         </li>
                         <li class="interactive-cards__item card">
                             <video src="" class="card__video" controls poster="assets/images/card-video-preload.jpg"></video>
                         </li>
-                        <li class="interactive-cards__item card">
-                            <div></div>
-                            <ul>
-                                <li>Daily Mobile UI Design Inspiration #1 via @cssauthor</li>
-                                <li>Daily Mobile UI Design Inspiration #1 via @cssauthor</li>
-                                <li>Daily Mobile UI Design Inspiration #1 via @cssauthor</li>
-                            </ul>
-                            <form>
-                                <input type="text">
-                                <button>Tweet</button>
-                            </form>
+                        <li class="interactive-cards__item card card--twitter">
+                            <div class="card__image">
+                                <svg class="card__twitter-icon">
+                                    <use xlink:href="#twitter"></use>
+                                </svg>
+                            </div>
+                            <div class="card__panels">
+                                <ul class="twitter-list card__twitter-list">
+                                    <li class="twitter-list__item twitter-list__item--active">Daily Mobile UI Design Inspiration #1 via @cssauthor</li>
+                                    <li class="twitter-list__item">Daily Mobile UI Design Inspiration #1 via @cssauthor</li>
+                                    <li class="twitter-list__item">Daily Mobile UI Design Inspiration #1 via @cssauthor</li>                                    
+                                </ul>
+                                <form class="card__form twitter-form">
+                                    <input type="text" class="twitter-form__input">
+                                    <button class="twitter-form__btn twitter-btn" type="button">Tweet</button>
+                                </form>
+                            </div>
+                            
+                            
                         </li>
                     </ul>
-                    <input type="range">
+                    <input type="range" class="description__range">
                 </div>
                 <div class="offer">
-                    <h2>Lorem ipsum dolor sit amet</h2>
+                    <h2 class="offer__header">Lorem ipsum dolor sit amet</h2>
                     <div class="offer__lists">
-                        <ul class="offer__gadgets-list">
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                        </ul>
+                        <div class="offer__gadgets">
+                            <img src="assets/images/gadgets.png" alt="gadgets" class="offer__image">
+                            <span class="offer__sign sign">it's 100% free</span>
+                            
+                        </div>
                         <ul class="offer__edges edges-list">
                             <li classs="">Sed ut perspiciatis unde omnis</li>
                             <li>Lorem ipsum dolor sit amet, consectetur adipisicing </li>
@@ -192,6 +201,11 @@
                 <path
                     d="M49.725 42.236v20.073l-8.847-11.368L22.525 69 0 0l68 24.254zM6.375 6.551L45.05 46.836l4.533-4.46z"
                     fill-rule="evenodd"></path>
+            </symbol>
+
+            <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 158.062 133" id="twitter">
+                <path d="M158.053 15.312l-14.817 15.313v2.553a33.97 33.97 0 0 1-1.067 8.068c-.345 21.067-6.838 49-33.506 71.051C56.207 155.67.007 117.4.007 117.4c44.45 0 44.45-15.314 44.45-15.314-9.877 0-29.633-20.417-29.633-20.417 4.939 5.1 14.817 0 14.817 0-24.7-15.314-24.7-30.627-24.7-30.627 4.939 5.1 14.817 0 14.817 0C-4.932 30.625 9.885 5.1 9.885 5.1 14.824 30.622 79.03 40.831 79.03 40.831l.817-.422a62.463 62.463 0 0 1-.817-9.787C79.031 12.3 93.403 0 111.131 0a31.483 31.483 0 0 1 24.281 11.7l2.883-1.49L153.114 0l-9.878 20.418z"
+                 fill-rule="evenodd"></path>
             </symbol>
         </svg>
 
