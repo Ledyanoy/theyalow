@@ -129,40 +129,46 @@ table {
 }
 
 @font-face {
-	font-family: "Open Sans";
-	src: url(assets/fonts/open-sans/open-sans-regular.woff2) format("woff2"), url(assets/fonts/pt-sans/open-sans-regular.woff) format("woff");
+	font-family: 'Open Sans';
+	src: url(assets/fonts/open-sans/open-sans-regular.woff2) format('woff2'), url(assets/fonts/pt-sans/open-sans-regular.woff) format('woff');
 	font-weight: regular;
 }
 
 @font-face {
-	font-family: "PT Sans";
-	src: url(assets/fonts/pt-sans/pt-sans-regular.woff2) format("woff2"), url(assets/fonts/pt-sans/pt-sans-regular.woff) format("woff");
+	font-family: 'PT Sans';
+	src: url(assets/fonts/pt-sans/pt-sans-regular.woff2) format('woff2'), url(assets/fonts/pt-sans/pt-sans-regular.woff) format('woff');
 	font-weight: regular;
 }
 
 @font-face {
-	font-family: "PT Sans Narrow";
-	src: url(assets/fonts/pt-sans-narrow/pt-sans-narrow-700.woff2) format("woff2"), url(assets/fonts/pt-sans-narrow/pt-sans-narrow-700.woff) format("woff");
+	font-family: 'PT Sans Narrow';
+	src: url(assets/fonts/pt-sans-narrow/pt-sans-narrow-700.woff2) format('woff2'), url(assets/fonts/pt-sans-narrow/pt-sans-narrow-700.woff) format('woff');
 	font-weight: bold;
 }
 
 @font-face {
-	font-family: "SegoeWP";
-	src: url(assets/fonts/segoe-wp/SegoeWP.woff) format("woff");
+	font-family: 'SegoeWP';
+	src: url(assets/fonts/segoe-wp/SegoeWP.woff) format('woff');
 	font-weight: regular;
 }
 
 @font-face {
-	font-family: "Asap";
-	src: url(assets/fonts/asap/asap-regular.woff2) format("woff2"), url(assets/fonts/asap/asap-regular.woff) format("woff");
+	font-family: 'Asap';
+	src: url(assets/fonts/asap/asap-regular.woff2) format('woff2'), url(assets/fonts/asap/asap-regular.woff) format('woff');
 	font-weight: regular;
 }
 
 @font-face {
-	font-family: "Lucida Sans";
-	src: url(assets/fonts/lucida/Lucida-Sans-Italic.ttf) format("ttf");
+	font-family: 'Lucida Sans';
+	src: url(assets/fonts/lucida/Lucida-Sans-Italic.woff2) format('woff2'), url(assets/fonts/lucida/Lucida-Sans-Italic.woff) format('woff');
 	font-weight: regular;
 	font-style: italic;
+}
+
+.w-wrapper {
+	min-width: 640px;
+	max-width: 1300px;
+	margin: 0 auto;
 }
 
 
@@ -186,7 +192,7 @@ table {
 }
 
 .logo--header {
-	padding: 13px 29px 10px 12px;
+	padding: 13px 24px 10px 12px;
 	background-image: url('assets/images/logo-gradient.png');
 }
 
@@ -212,7 +218,7 @@ table {
 }
 
 .logo__text {
-	font-family: "Lucida Sans";
+	font-family: 'Lucida Sans';
 	font-size: 19px;
 	text-transform: uppercase;
 	font-style: italic;
@@ -229,7 +235,7 @@ table {
 	flex-grow: 1;
 }
 	
-}
+
 
 .main-menu__item:not(:last-child) {
 	border-right: 1px solid #b99403;
@@ -268,7 +274,7 @@ table {
 }
 
 .main-menu__link--about {
-	padding-left: 25px;
+	padding-left: 24px;
 	padding-right: 25px;
 }
 
@@ -429,6 +435,10 @@ display: flex;
 
 .edges-list {
 	font-family: 'PT Sans';
+}
+
+.card--twitter .card__btn {
+	display: none;
 }
 
 .card__twitter-icon {
@@ -603,6 +613,7 @@ display: flex;
 .offer__lists {
 	padding-left:55px;
 	padding-top: 40px;
+	padding-bottom: 53px;
 }
 
 .offer__edges {
@@ -639,9 +650,305 @@ display: flex;
     left: -30px;
 }
 
+.footer {
+	-webkit-box-shadow: 0px -5px 10px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px -5px 10px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px -5px 10px 0px rgba(0,0,0,0.75);
+}
+
+.footer__logo {
+	padding-left: 66px;
+    padding-top: 5px; 
+	padding-bottom: 8px;
+}
+
+.footer__logo .logo__image {
+    height: 30px;
+    width: 30px;  
+}
+
 
 @media (min-width: 641px) {
 	.main-menu__item {
 		flex-grow: 1;
 	}	
+
+	.advantages-list {
+		margin: 0 auto;
+	}
+
+	.card--text {
+		flex-grow: 1;
+		margin-right: 9px;
+	}
+
+	.offer__gadgets {
+		width: 540px;
+		margin: 0 auto;
+	}
+}
+@media (min-width: 1300px) {
+
+	.desktop-content-wrapper {
+		max-width: 1020px;
+		margin-left: auto;
+		margin-right: auto; 
+		box-sizing: border-box;
+	}
+
+	.header {
+		background-image: url('assets/images/big-back.jpg')
+	}
+
+	.header__top {
+		justify-content: space-between;	
+		padding-top: 28px;	
+	}
+
+	.logo--header {
+		background: none;
+		padding: 0;
+	}
+
+	.header__top .logo__image {
+		width: 83px;
+		height: 83px;
+		margin-right: 5px;
+	}
+
+	.header__top .logo__text {
+		font-size: 40px;
+		padding-top: 9px;
+		letter-spacing: 0.02em;
+	}
+
+	.header__menu {
+		max-width: 453px;
+		height: 41px;	
+		margin-top: 43px;
+		-webkit-box-shadow: -4px -5px 0px 0px rgba(244,196,6,0.5), -8px -8px 0px 0px rgba(244,196,6,0.3);
+		-moz-box-shadow: -4px -5px 0px 0px rgba(244,196,6,0.5), -8px -8px 0px 0px rgba(244,196,6,0.3);
+		box-shadow: -4px -5px 0px 0px rgba(244,196,6,0.5), -8px -8px 0px 0px rgba(244,196,6,0.3);
+	}
+
+	.main-menu__link {
+		font-size: 17px;
+	}
+
+	.main-menu__link--about {
+		padding-left: 35px;
+		padding-right: 15px;
+	}	
+
+	.slider {
+		position: relative;
+	}
+
+	.slide {
+		padding-top: 55px;
+		padding-bottom: 70px;
+		display: flex;		
+	}
+
+	.slide__video {
+		max-width: 550px;
+		height: 327px;
+		margin-left: 10px;
+		object-fit: cover;
+		margin-right: 40px;
+	}
+
+	.slide-description {
+		display: block;	
+		padding-top: 80px;	
+	}
+
+	.slide-description__text  {
+		font-family: 'Asap';
+		font-size: 63px;
+		text-transform: uppercase;
+		text-align: center;
+		letter-spacing: 0.01em;
+		line-height: 1.15em;
+		
+	}
+
+	.slide-description__text--yellow {
+		color: #f5c506;
+	}
+
+	.slide-description__text--white {
+		color: white;
+		padding-left: 7px;
+	}
+
+	.slider__navigation {
+		display: block;
+	}
+
+	.slider__button {
+		display: block;
+		height: 57px;
+		width: 32px;
+		background-color: #f5c506;	
+		font-size: 0;
+		position: absolute;	
+		top: 42%;
+		transition: 0.4s;
+		cursor: pointer;
+	}
+
+	.slider__button--prev {
+		left: 0;
+	}
+
+	.slider__button--prev::before {
+		content: '';
+		display: block;
+		position: absolute;
+	    height: 10px;
+		width: 10px;
+		border-left: 5px solid white;
+		border-bottom: 5px solid white;
+		transform: rotate(45deg);
+		top: 20px;
+		left: 10px;
+	}
+	
+	
+	.slider__button--next {
+		right: 0;
+	}
+
+	.slider__button--next::before {
+		content: '';
+		display: block;
+		position: absolute;
+	    height: 10px;
+		width: 10px;
+		border-right: 5px solid white;
+		border-bottom: 5px solid white;
+		transform: rotate(-45deg);
+		top: 20px;
+		right: 10px;
+	}
+
+	.slider__button:hover {
+		background-color: white;
+	}
+
+	.slider__button:hover.slider__button--prev::before {
+		border-left: 5px solid #f5c506;
+		border-bottom: 5px solid #f5c506;
+	}
+
+	.slider__button:hover.slider__button--next::before {
+		border-right: 5px solid #f5c506;
+		border-bottom: 5px solid #f5c506;
+	}
+
+	.slider__button:active {
+		background-color: black;
+	}
+
+	.advantages-list {
+		justify-content: start;
+		padding: 0;
+		border-left: 1px solid #d4d4d4;
+		border-right: 1px solid #d4d4d4;
+	}
+
+	.advantages-list__item{
+		max-width: 340px;
+		width: 100%;
+		padding-bottom: 35px;
+	}
+	.advantages-list__item:not(:last-child){
+		border-right: 1px solid #d4d4d4;
+	}
+
+	.advantages-list__text {
+		text-align: center;
+		font-size: 27px;
+	}
+
+	.advantages__icon--design {		
+		height: 95px;
+		width: 110px;
+		margin-top: 55px;
+		margin-left: 110px;
+		margin-bottom: 0px;
+	}
+
+	.advantages__icon--design + p {		
+		padding-left: 20px;
+	}
+
+	.advantages__icon--custom {
+		height: 95px;
+		width: 91px;
+		margin-left: 137px;
+		margin-top: 37px;
+		margin-bottom: 19px;
+	}
+
+	.advantages__icon--custom + p {
+		padding-left: 20px;
+	}
+
+	.advantages__icon--free {
+		height: 83px;
+		width: 81px;
+		margin-left: 119px;
+		margin-top: 56px;
+		margin-bottom: 13px;
+	}
+
+	.advantages__icon--free + p {
+		margin-left: -16px;
+	}
+
+	.description {
+		background-image: url('assets/images/description-back.png');
+		padding: 40px 0 0;
+	}
+
+	.interactive-cards {
+		justify-content: flex-start;
+	}
+
+	.interactive-cards__item {
+		height: 233px;
+		flex-grow: 0;
+	}
+
+	.card--text {
+		width: 341px;	
+		margin-right: 0;	
+	}
+
+	.card--video {
+		width: 315px;
+	}
+	
+
+	.card--twitter {
+		width: 330px;	
+		margin-left: auto;
+		margin-right: 0;
+		margin-top: 0;	
+		background-color: #ec9e03;
+	}
+
+	.card__panels {
+		display: none;
+	}
+
+	.card__image {
+		margin: 0 auto;
+	}
+
+	.card--twitter .card__btn {
+		display: block;
+	}
 }

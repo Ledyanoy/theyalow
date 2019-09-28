@@ -10,12 +10,12 @@
 </head>
 
 <body>
-    <div class="wrapper">
+    <div class="h-wrapper">
 
-        <div class="content">
+        <div class="content  w-wrapper">
             <header class="header">
                 <h1 class="visually-hidden">theyalow</h1>
-                <div class="header__top">
+                <div class="header__top desktop-content-wrapper">
                     <a class="logo logo--header">
                         <div class="logo__image">
                             <svg class="logo-icon">
@@ -28,7 +28,7 @@
 
                         <span class="logo__text">theyalow</span>
                     </a>
-                    <ul class="main-menu">
+                    <ul class="header__menu main-menu">
                         <li class="main-menu__item">
                             <a href="" class="main-menu__link main-menu__link--about">
                                 <svg class="main-menu__icon main-menu__icon--about-us">
@@ -56,11 +56,11 @@
                     </ul>
                 </div>
                 <div class="slider">
-                    <div class="slide slider__item">
+                    <div class="slide slider__item desktop-content-wrapper">
                         <video src="" class="slide__video" controls poster="assets/images/video-preload.png"></video>
                         <div class="slide-description">
-                            <p>the cool</p>
-                            <p>the minimal</p>
+                            <p class="slide-description__text slide-description__text--yellow">the cool</p>
+                            <p class="slide-description__text slide-description__text--white">the minimal</p>
                         </div>
                     </div>
                     <div class="slider__navigation">
@@ -72,7 +72,7 @@
             <main class="main">
                 
                 <div class="advantages">
-                    <ul class="advantages-list">
+                    <ul class="advantages-list desktop-content-wrapper">
                         <li class="advantages-list__item">
                             <svg class="advantages__icon advantages__icon--design">
                                 <use xlink:href="#better_design"></use>
@@ -95,12 +95,12 @@
                 </div>
                 <div class="description">
                     <h2 class="description__header">lorem ipsum dolor sit amet</h2>
-                    <ul class="interactive-cards">
+                    <ul class="interactive-cards desktop-content-wrapper">
                         <li class="interactive-cards__item card card--text">Lorem ipsum dolor sit amet, consecte&shy;tur adipisicing elit, sed do eiusmod tempor incididunt
                             ut
                             <a href="" class="card__btn add-btn"></a>
                         </li>
-                        <li class="interactive-cards__item card">
+                        <li class="interactive-cards__item card card--video">
                             <video src="" class="card__video" controls poster="assets/images/card-video-preload.jpg"></video>
                         </li>
                         <li class="interactive-cards__item card card--twitter">
@@ -121,7 +121,7 @@
                                 </form>
                             </div>
                             
-                            
+                            <a href="" class="card__btn add-btn"></a>
                         </li>
                     </ul>
                     <input type="range" class="description__range">
@@ -147,11 +147,19 @@
             </main>
         </div>
 
-        <footer class="footer">
-            <div class="logo footer__logo">
-                <img src="" alt="">
-                <span>theyalow</span>
-            </div>
+        <footer class="footer w-wrapper">
+            <a class="logo footer__logo">
+                <div class="logo__image">
+                    <svg class="logo-icon">
+                        <use xlink:href="#logo"></use>
+                    </svg>
+                    <svg class="logo-icon logo-icon--shadow">
+                        <use xlink:href="#logo-shadow"></use>
+                    </svg>
+                </div>
+
+                <span class="logo__text">theyalow</span>
+            </a>
         </footer>
 
         <svg width="0" height="0" class="hidden">
